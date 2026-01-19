@@ -10,4 +10,5 @@ langgraph-supervisor
 dotenv
 pydantic
 typing
+sentence-transformers
 wikipedia
