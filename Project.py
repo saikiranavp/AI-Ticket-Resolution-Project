@@ -9,7 +9,7 @@ from langchain_core.chat_history import InMemoryChatMessageHistory
 from langchain_community.vectorstores import FAISS
 
 load_dotenv()
-hf_token = st.secrets["hf_token"]
+hf_token = st.secrets["HF_TOKEN"]
 
 
 llm = ChatHuggingFace(
@@ -190,5 +190,6 @@ if st.button("Get Recommendation"):
 
     answer = ask_with_history(query, session_id=session_id)
     st.write(answer)
+
 
 
